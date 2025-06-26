@@ -10,7 +10,7 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/login', [LoginController::class, 'index'])->name('login-page');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login.input');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
